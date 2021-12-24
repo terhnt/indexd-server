@@ -1,6 +1,6 @@
 FROM node:carbon
 
-MAINTAINER Counterparty Developers <dev@counterparty.io>
+MAINTAINER Unoparty Developers <dev@unobtanium>
 
 RUN apt update
 RUN apt install -y libzmq3-dev gcc g++ python3 build-essential
@@ -21,7 +21,7 @@ COPY index.js /indexd
 COPY ./docker/start.sh /usr/local/bin/start.sh
 RUN chmod a+x /usr/local/bin/start.sh
 
-EXPOSE 8432 18432 28432
+EXPOSE 8122 18122 28122
 
 # start indexd
 CMD ["npm", "start"]
